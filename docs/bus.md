@@ -19,6 +19,8 @@ bus.close();
 
 ```javascript
 
+// (This actually interacts with zcashd)
+
 // subscribe to all transaction events
 bus.subscribe('bitcoind/rawtransaction');
 

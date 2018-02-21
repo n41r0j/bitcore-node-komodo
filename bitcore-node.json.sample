@@ -12,7 +12,7 @@
     "transaction",
     "timestamp",
     "fee",
-    "insight-api",
+    "insight-api-zclassic",
     "web"
   ],
   "servicesConfig": {

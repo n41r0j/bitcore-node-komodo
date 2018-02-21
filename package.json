@@ -1,16 +1,16 @@
 {
-  "name": "bitcore-node",
-  "description": "Full node with extended capabilities using Bitcore and Bitcoin Core",
+  "name": "bitcore-node-zclassic",
+  "description": "Zclassic Full-Node with extended capabilities using Bitcore and Bitcoin Core",
   "engines": {
     "node": ">=8.0.0"
   },
   "author": "BitPay <dev@bitpay.com>",
-  "version": "5.0.0-beta.44",
+  "version": "5.0.0-beta.44-zclassic",
   "main": "./index.js",
-  "repository": "git://github.com/bitpay/bitcore-node.git",
-  "homepage": "https://github.com/bitpay/bitcore-node",
+  "repository": "git://github.com/z-classic/bitcore-node-zclassic.git",
+  "homepage": "https://github.com/z-classic/bitcore-node-zclassic",
   "bugs": {
-    "url": "https://github.com/bitpay/bitcore-node/issues"
+    "url": "https://github.com/z-classic/bitcore-node-zclassic/issues"
   },
   "bin": {
     "bitcore-node": "./bin/bitcore-node"
@@ -19,13 +19,18 @@
     "test": "NODE_ENV=test mocha -R spec --recursive test"
   },
   "tags": [
+    "zclassic",
+    "zcl",
+    "zcld",
+    "bcoin",
     "bitcoin",
     "bitcoind",
-    "bcoin",
-    "bitcoin full node",
-    "bitcoin index",
-    "block explorer",
-    "wallet backend"
+    "zcashd",
+    "zcld",
+    "zclassic full node",
+    "zclassic index",
+    "zcl block explorer",
+    "zcl wallet backend"
   ],
   "dependencies": {
     "async": "^2.5.0",

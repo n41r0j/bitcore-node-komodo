@@ -12,13 +12,13 @@ describe('Logger', function() {
     sandbox.restore();
   });
 
-  it('will instatiate without options', function() {
+  it('will instantiate without options', function() {
     var logger = new Logger();
     should.exist(logger);
     logger.formatting.should.equal(true);
   });
 
-  it('will instatiate with formatting option', function() {
+  it('will instantiate with formatting option', function() {
     var logger = new Logger({
       formatting: false
     });

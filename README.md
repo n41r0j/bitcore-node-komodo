@@ -1,11 +1,7 @@
-Bitcore Node
+Bitcore Node for Zclassic
 ============
 
-A Bitcoin blockchain indexing and query service. Intended to be used with as a Bitcoin full node or in conjunction with a Bitcoin full node.
-
-## Upgrading from previous versions of Bitcore Node
-
-There is no upgrade path from previous versions of Bitcore Node due to the removal of the included Bitcoin Core software. By installing this version, you must resynchronize the indexes from scratch.
+A Zclassic blockchain indexing and query service. Intended to be used with as a Zclassic full node or in conjunction with a Zclassic full node.
 
 ## Install
 
@@ -28,7 +24,7 @@ The main configuration file is called "bitcore-node.json". This file instructs b
 
 - location of database files (datadir)
 - tcp port for web services, if configured (port)
-- bitcoin network type (e.g. mainnet, testnet3, regtest), (network)
+- zclassic network type (e.g. mainnet, testnet3, regtest), (network)
 - what services to include (services)
 - the services' configuration (servicesConfig)
 
@@ -36,8 +32,8 @@ The main configuration file is called "bitcore-node.json". This file instructs b
 
 There are several add-on services available to extend the functionality of Bitcore:
 
-- [Insight API](https://github.com/bitpay/insight-api)
-- [Insight UI](https://github.com/bitpay/insight-ui)
+- [Insight API for Zclassic](https://github.com/bitpay/insight-api-zclassic)
+- [Insight UI for Zclassic](https://github.com/bitpay/insight-ui-zclassic)
 - [Bitcore Wallet Service](https://github.com/bitpay/bitcore-wallet-service)
 
 ## Documentation
@@ -68,4 +64,8 @@ Code released under [the MIT license](https://github.com/bitpay/bitcore-node/blo
 
 Copyright 2013-2017 BitPay, Inc.
 
+Modified by The Zclassic Team
+
 - bitcoin: Copyright (c) 2009-2015 Bitcoin Core Developers (MIT License)
+- zcash: Copyright (c) 2016-2018 The Zcash Developers (MIT License)
+- zlassic: Copyright (c) 2016-2018 The Zclassic Developers (MIT License)

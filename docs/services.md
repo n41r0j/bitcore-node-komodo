@@ -20,9 +20,9 @@ Services correspond with a Node.js module as described in 'package.json', for ex
 ```json
 {
   "dependencies": {
-    "bitcore-lib": "^0.13.7",
-    "bitcore-node": "^0.2.0",
-    "insight-api": "^3.0.0"
+    "bitcore-lib-zclassic": "^0.13.7",
+    "bitcore-node-zclassic": "^0.2.0",
+    "insight-api-zclassic": "^3.0.0"
   }
 }
 ```
@@ -48,8 +48,8 @@ var myNode = new bitcore.Node({
       module: Bitcoin,
       config: {
         spawn: {
-          datadir: '/home/<username>/.bitcoin',
-          exec: '/home/<username>/bitcore-node/bin/bitcoind'
+          datadir: '/home/<username>/.zclassic',
+          exec: '/home/<username>/bitcore-node/bin/zcashd'
         }
       }
     },
@@ -85,4 +85,3 @@ A new service can be created by inheriting from `Node.Service` and implementing 
 The `package.json` for the service module can either export the `Node.Service` directly, or specify a specific module to load by including `"bitcoreNode": "lib/bitcore-node.js"`.
 
 Please take a look at some of the existing services for implementation specifics.
-

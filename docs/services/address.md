@@ -1,6 +1,6 @@
 # Address Service
 
-The address service provides an address index for the Bitcoin blockchain. Specifically, it builds and maintains the following information about every address ever used on the Bitcoin network:
+The address service provides an address index for the Zclassic blockchain. Specifically, it builds and maintains the following information about every address ever used on the Zclassic network:
 
 - block heights the address appeared in
 - transaction ids and the index in the transaction

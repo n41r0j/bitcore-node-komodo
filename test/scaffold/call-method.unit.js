@@ -60,6 +60,7 @@ describe('#callMethod', function() {
   });
 
   it('give result and close socket', function(done) {
+    //TODO zclify
     var expectedData = {
       version: 110000,
       protocolversion: 70002,

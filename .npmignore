@@ -23,6 +23,9 @@ coverage/*
 *.log
 .DS_Store
 bin/bitcoin*
+bin/zcash*
+bin/zcl*
+bin/zclassic*
 bin/SHA256SUMS.asc
 regtest/data/node1/regtest
 regtest/data/node2/regtest
@@ -30,4 +33,4 @@ regtest/data/node3/regtest
 bitcore-node.json*
 *.bak
 *.orig
-lib/services/insight-api
+lib/services/insight-api-zclassic

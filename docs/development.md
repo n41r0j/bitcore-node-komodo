@@ -106,7 +106,7 @@ touch bitcore-node.json
 touch package.json
 ```
 
-Edit `bitcore-node.json` with something similar to:
+Edit `bitcore-node.json` with:
 ```json
 {
   "network": "livenet",
@@ -114,34 +114,34 @@ Edit `bitcore-node.json` with something similar to:
   "services": [
     "bitcoind",
     "web",
-    "insight-api",
-    "insight-ui",
+    "insight-api-zclassic",
+    "insight-ui-zclassic",
     "<additional_service>"
   ],
   "servicesConfig": {
     "bitcoind": {
       "spawn": {
-        "datadir": "/home/<youruser>/.bitcoin",
-        "exec": "/home/<youruser>/bitcoin/src/bitcoind"
+        "datadir": "/home/<youruser>/.zclassic",
+        "exec": "/home/<youruser>/zclassic/src/zclassic"
       }
     }
   }
 }
 ```
 
-**Note**: To install services [insight-api](https://github.com/bitpay/insight-api) and [insight-ui](https://github.com/bitpay/insight-ui) you'll need to clone the repositories locally.
+**Note**: To install services [insight-api-zclassic](https://github.com/z-classic/insight-api-zclassic) and [insight-ui-zclassic](https://github.com/z-classic/insight-ui-zclassic) you'll need to clone the repositories locally.
 
 Setup symlinks for all of the services and dependencies:
 
 ```bash
 cd node_modules
-ln -s ~/bitcore-lib
-ln -s ~/bitcore-node
-ln -s ~/insight-api
-ln -s ~/insight-ui
+ln -s ~/bitcore-lib-zclassic
+ln -s ~/bitcore-node-zclassic
+ln -s ~/insight-api-zclassic
+ln -s ~/insight-ui-zclassic
 ```
 
-Make sure that the `<datadir>/bitcoin.conf` has the necessary settings, for example:
+Make sure that the `<datadir>/zclassic.conf` has the necessary settings, for example:
 ```
 server=1
 whitelist=127.0.0.1
@@ -152,11 +152,11 @@ spentindex=1
 zmqpubrawtx=tcp://127.0.0.1:28332
 zmqpubhashblock=tcp://127.0.0.1:28332
 rpcallowip=127.0.0.1
-rpcuser=bitcoin
+rpcuser=zclassic
 rpcpassword=local321
 ```
 
 From within the `devnode` directory with the configuration file, start the node:
 ```bash
-../bitcore-node/bin/bitcore-node start
+../bitcore-node-zclassic/bin/bitcore-node start
 ```
