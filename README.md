@@ -32,8 +32,8 @@ The main configuration file is called "bitcore-node.json". This file instructs b
 
 There are several add-on services available to extend the functionality of Bitcore:
 
-- [Insight API for Zclassic](https://github.com/bitpay/insight-api-zclassic)
-- [Insight UI for Zclassic](https://github.com/bitpay/insight-ui-zclassic)
+- [Insight API for Zclassic](https://github.com/z-classic/insight-api-zclassic)
+- [Insight UI for Zclassic](https://github.com/z-classic/insight-ui-zclassic)
 - [Bitcore Wallet Service](https://github.com/bitpay/bitcore-wallet-service)
 
 ## Documentation
