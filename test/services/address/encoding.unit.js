@@ -1,6 +1,6 @@
 'use strict';
 
-var bitcore = require('bitcore-lib-zclassic');
+var bitcore = require('bitcore-lib-komodo');
 var should = require('chai').should();
 var Encoding = require('../../../lib/services/address/encoding');
 

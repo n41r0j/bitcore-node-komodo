@@ -94,8 +94,8 @@ describe('#add', function() {
       var callCount = 0;
       var oldPackage = {
         dependencies: {
-          'bitcore-lib-zclassic': '^v0.13.7',
-          'bitcore-node-zclassic': '^v0.2.0'
+          'bitcore-lib-komodo': '^v0.13.7',
+          'bitcore-node-komodo': '^v0.2.0'
         }
       };
       var spawn = sinon.stub().returns({

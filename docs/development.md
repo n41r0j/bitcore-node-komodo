@@ -121,27 +121,27 @@ Edit `bitcore-node.json` with:
   "servicesConfig": {
     "bitcoind": {
       "spawn": {
-        "datadir": "/home/<youruser>/.zclassic",
-        "exec": "/home/<youruser>/zclassic/src/zclassic"
+        "datadir": "/home/<youruser>/.komodo",
+        "exec": "/home/<youruser>/komodo/src/komodod"
       }
     }
   }
 }
 ```
 
-**Note**: To install services [insight-api-zclassic](https://github.com/z-classic/insight-api-zclassic) and [insight-ui-zclassic](https://github.com/z-classic/insight-ui-zclassic) you'll need to clone the repositories locally.
+**Note**: To install services [insight-api-komodo](https://github.com/n41r0j/insight-api-komodo) and [insight-ui-komodo](https://github.com/n41r0j/insight-ui-komodo) you'll need to clone the repositories locally.
 
 Setup symlinks for all of the services and dependencies:
 
 ```bash
 cd node_modules
-ln -s ~/bitcore-lib-zclassic
-ln -s ~/bitcore-node-zclassic
-ln -s ~/insight-api-zclassic
-ln -s ~/insight-ui-zclassic
+ln -s ~/bitcore-lib-komodo
+ln -s ~/bitcore-node-komodo
+ln -s ~/insight-api-komodo
+ln -s ~/insight-ui-komodo
 ```
 
-Make sure that the `<datadir>/zclassic.conf` has the necessary settings, for example:
+Make sure that the `<datadir>/komodo.conf` has the necessary settings, for example:
 ```
 server=1
 whitelist=127.0.0.1
@@ -152,11 +152,11 @@ spentindex=1
 zmqpubrawtx=tcp://127.0.0.1:28332
 zmqpubhashblock=tcp://127.0.0.1:28332
 rpcallowip=127.0.0.1
-rpcuser=zclassic
+rpcuser=komodouser
 rpcpassword=local321
 ```
 
 From within the `devnode` directory with the configuration file, start the node:
 ```bash
-../bitcore-node-zclassic/bin/bitcore-node start
+../bitcore-node-komodo/bin/bitcore-node start
 ```

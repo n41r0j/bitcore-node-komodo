@@ -14,13 +14,13 @@ A node represents a collection of services that are loaded together. For more in
 
 ```js
 
-var index = require('bitcore-node-zclassic');
+var index = require('bitcore-node-komodo');
 var Bitcoin = index.services.Bitcoin;
 var Node = index.Node;
 
 var configuration = {
-  datadir: '/home/user/.zclassic',
-  network: 'testnet',
+  datadir: '/home/user/.komodo',
+  network: 'mainnet',
   services: [
     {
       name: 'bitcoind',

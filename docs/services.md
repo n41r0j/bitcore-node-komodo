@@ -48,8 +48,8 @@ var myNode = new bitcore.Node({
       module: Bitcoin,
       config: {
         spawn: {
-          datadir: '/home/<username>/.zclassic',
-          exec: '/home/<username>/bitcore-node/bin/zcashd'
+          datadir: '/home/<username>/.komodo',
+          exec: '/home/<username>/bitcore-node/bin/komodod'
         }
       }
     },
